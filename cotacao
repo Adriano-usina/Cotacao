@@ -1,6 +1,0 @@
-git init
-git add .
-git commit -m "Subindo projeto do sistema Cotação"
-git branch -M principal
-git remote add origin https://github.com/Adriano-usina/Cotacao.git
-git push -u origin principal
