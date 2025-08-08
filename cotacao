@@ -1,6 +1,6 @@
 git init
 git add .
-git commit -m "Primeira versão"
-git branch -M main
-git remote add origin https://github.com/seu-usuario/seu-repositorio.git
-git push -u origin main
+git commit -m "Subindo projeto do sistema Cotação"
+git branch -M principal
+git remote add origin https://github.com/Adriano-usina/Cotacao.git
+git push -u origin principal
