@@ -40,3 +40,12 @@ function App() {
     </BrowserRouter>
   );
 }
+function Fornecedores() {
+  return (
+    <div>
+      <h1>Cadastro de Fornecedores</h1>
+      {/* Formulário de cadastro */}
+    </div>
+  );
+}
+export default Fornecedores;
