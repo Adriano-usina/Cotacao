@@ -3,48 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sistema de Cotação</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Cadastro Fornecedores</title>
+  <style>
+    body { font-family: Arial; margin:20px; }
+    input, button { padding: 8px; margin: 5px; }
+    .fornecedor { border:1px solid #ccc; padding:5px; margin-top:5px; }
+  </style>
 </head>
 <body>
-  <h1>Solicitar Cotação</h1>
-  <button onclick="mostrarCotacao()">Ver Cotação</button>
-  <div id="resultado"></div>
-
-  <script src="script.js"></script>
-</body>
-</html>
-<nav>
-  <button onclick="mostrarFormulario()">Nova Cotação</button>
-  <button onclick="mostrarRelatorios()">Relatórios</button>
-</nav>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cotação de Frete</title>
-</head>
-<body>
-  <h1>Cotação de Frete</h1>
-
-  <form id="freteForm">
-    <label>Origem:
-      <input type="text" id="origem" required>
-    </label><br><br>
-
-    <label>Destino:
-      <input type="text" id="destino" required>
-    </label><br><br>
-
-    <label>Peso (kg):
-      <input type="number" id="peso" required>
-    </label><br><br>
-
-    <button type="submit">Calcular Frete</button>
+  <h1>Cadastro de Fornecedores</h1>
+  <form id="formFornecedor">
+    <input type="text" id="nome" placeholder="Nome" required />
+    <input type="text" id="cnpj" placeholder="CNPJ" required />
+    <input type="text" id="contato" placeholder="Contato" required />
+    <button type="submit">Cadastrar</button>
   </form>
-
-  <h2 id="resultado"></h2>
+  <div id="lista"></div>
 
   <script src="script.js"></script>
 </body>
