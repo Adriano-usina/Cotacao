@@ -23,3 +23,20 @@ function mostrarRelatorios() {
   document.getElementById('formulario').style.display = 'none';
   document.getElementById('relatorios').style.display = 'block';
 }
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Fornecedores from './pages/Fornecedores';
+import Veiculos from './pages/Veiculos';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/fornecedores" element={<Fornecedores />} />
+        <Route path="/veiculos" element={<Veiculos />} />
+        {/* Adicione mais aqui */}
+      </Routes>
+    </BrowserRouter>
+  );
+}
